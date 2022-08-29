@@ -1,13 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #b3cae4;
+  background-size: cover;
+  background-position: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+span {
+  font-family: "Inconsolata", monospace;
+}
+.hero-body,
+.hero-head {
+  background-color: #567bac;
+  height: 150px;
+}
+#typeWriterContainr {
+  position: relative;
+}
+.is-active {
+  color: black;
+}
+
+.tabs {
+  background-color: #121212;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+/* project navbar css begins */
+#projectsNavbar {
+  right: 80px;
+  bottom: 275px;
+  border-radius: 5px;
+  position: relative;
+  width: 110px;
+}
+
+#projNavbarHover {
+  border-radius: 5px;
+}
+/* project navbar css ends */
+
+/* Overview start */
+
+#overviewContainer {
+  position: relative;
+  bottom: 150px;
+}
+
+/* Overview ends */
+/* skills pages begins */
+
+progress {
+  max-width: 750px;
+}
+
+#skillsContainer {
+  position: relative;
+  bottom: 75px;
+}
+#progressHeader {
+  padding: 15px;
+}
+
+/* skills pages ends */
+
+/* UPENN Project gallery begins */
+body {
+  font-family: "Inconsolata", monospace;
+  margin: 0;
+}
+
+.viewbutton,
+.deployedApp,
+.githubRepo {
+  cursor: pointer;
+}
+
+#portfolio {
+  width: 100%;
+  min-height: 40vh;
+  background: transparent;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(20px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.project {
+  position: relative;
+  background: #FFB7C5;
+  overflow: hidden;
+  height: 200px;
+}
+.project img {
+  position: absolute;
+  opacity: 0.9;
+}
+.project,
+img,
+#otherImage{
+  height: 250px;
+}
+.project,
+img,
+#firstImage {
+  height: 300px;
+}
+.project p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 3;
+}
+.project .grid__title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  bottom: 0;
+  font-weight: 100;
+  font-size: 0.8em;
+  z-index: 3;
+  text-transform: uppercase;
+  color: #121212;
+  letter-spacing: 2px;
+}
+
+.project:hover .grid__overlay {
+  transform: translateY(0%);
+}
+
+.grid__overlay {
+  background: #567bac;
+  height: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(90%);
+  transition: all 0.3s ease-in-out;
+}
+.grid__overlay button {
+  background: none;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  color: #b3cae4;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.grid__overlay button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: #d1a39e;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(71, 69, 69, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+}
+
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlay__inner {
+  background: transparent;
+  width: 500px;
+  /* padding: 40px; */
+  position: relative;
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: #474545;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.close:hover {
+  color: #d1a39e;
+}
+
+/* About Section Begins */
+#aboutCard{
+  width: 1000px;
+  height: 300px;
+  right: 150px;
+  /* padding-right: 500px; */
+}
+#aboutCard h1{
+  position: relative;
+  text-align: center;
+}
+#aboutContainer{
+ position: relative;
+ left: 400px;
+ bottom: 200px;
+ /* transition-property: sliding-horizontally ; */
+ /* transition: all 1.0s ease-in; */
+}
+
+/* About Section Ends */
+
+/* Footer css begins */
+
+#footer {
+  height: 25px;
+  background-color: #121212;
+}
+
+/* Below are the media queries so that the website is responsive to difference sizes. */
+/* @media screen and (min-width: 480px){
+    
+} */
+@media screen and (max-width: 1025px) {
+  #overviewContainer {
+    position: relative;
+    top: 10px;
+  }
+  #skillsContainer {
+    position: relative;
+    top: 10px;
+  }
+  #projectsNavbar {
+    position: relative;
+    right: 0px;
+    top: 1px;
+  }
+  #burgerMenu {
+    max-width: 50px;
+    position: left;
+  }
+}
+/* @media screen and (min-width: 1200px){
+    
+} */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(245, 245, 245, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #43485c;
+  scroll-behavior: smooth;
 }
