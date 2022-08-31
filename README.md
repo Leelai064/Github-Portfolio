@@ -8,8 +8,6 @@ This portoflio showcases all of the applications that Leelai has created through
 
 https://github.com/Leelai064/React-Portfolio
 
-## Website Visuals
+## Heroku Deployed Website Link
 
-Below is a short clip of the React.js Portfolio interaction
-
->Insert gif here<
+https://leelaihayslettportfolio.herokuapp.com/

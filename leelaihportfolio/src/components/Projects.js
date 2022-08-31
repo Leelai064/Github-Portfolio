@@ -4,7 +4,7 @@ import "../index.css"
 const Projects = () => {
     return (
 
-        <div className="section is-large hide" id="Projects">
+        <div className="section is-large" id="Projects">
             <nav className="navbar" id='projectsNavbar' role="navigation" aria-label="dropdown navigation">
                 <div className="navbar-item has-dropdown is-hoverable projectmagic" id=" projNavbarHover">
                     <a href='#projects' className="navbar-link">

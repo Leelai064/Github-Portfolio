@@ -1,9 +1,9 @@
 import React from 'react'
 import "../index.css"
-
+import professionalImg from ".././assets/images/professionalPicture.jpg"
 const About = () =>{
 
-    <section className="section is-large hide" id="About">
+    <section className="section is-large" id="About">
     <div className="columns is-8 is-vcentered" id="aboutContainer" >
       <div className="colum is-8 notification " id="aboutCard">
         <h1 className="title">Hi There!</h1>
@@ -19,7 +19,7 @@ const About = () =>{
         </p>
       </div>
       <div className="column is-8">
-        <img id="professionalImg" src="./assets/images/professionalPicture.jpg"/>
+        <img  src= {professionalImg} alt="img"/>
       </div>
     </div>
   </section>

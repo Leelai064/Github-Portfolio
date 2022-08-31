@@ -3,7 +3,7 @@ import "../index.css"
 
 const Skills = () => {
 return(
-    <section className="section is-large hide" id="Skills">
+    <section className="section is-large" id="Skills">
     <div id="skillsContainer">
       <h1 className="title has-text-centered">Technology Learning Progression</h1>
       <div className="columns is-6">

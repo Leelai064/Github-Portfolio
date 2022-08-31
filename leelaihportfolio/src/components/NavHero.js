@@ -3,11 +3,7 @@ import "../index.css"
 import Linkedin from ".././assets/images/linkedin.png"
 import Github from ".././assets/images/github_icon.png"
 import Resume from ".././assets/images/resume.png"
-import { useState } from "react"; 
-import Overview from "./Overview";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import About from "./About";
+
 
 const HeroNAV = () => {
 
@@ -18,31 +14,31 @@ const HeroNAV = () => {
         dropDownMenu.classList.toggle('is-active');
     };
     
-    const [currentPage, setCurrentPage]=useState(true);
+    // const [currentPage, setCurrentPage]=useState(true);
 
-    const renderPage = () =>{
-        if (currentPage === "About"){
-            return <About />;
-        }
-        if (currentPage === "Skills"){
-            return <Skills/>;
-        }
-        if (currentPage === "Projects"){
-            return <Projects />;
-        }
+    // const renderPage = () =>{
+    //     if (currentPage === "About"){
+    //         return <About />;
+    //     }
+    //     if (currentPage === "Skills"){
+    //         return <Skills/>;
+    //     }
+    //     if (currentPage === "Projects"){
+    //         return <Projects />;
+    //     }
         
-        return <Overview/>;
+    //     return <Overview/>;
 
-    };
-    function renderTemplates(event) {
-        event.preventDefault()
-        //change the state to whichever selection is made in the dropdown menu
-        console.log(event.target.innerText);
-        setCurrentPage(event.target.innerText);
-        //create an empty template for the default and get rid of the state defaulting to the cover letter
-        //update the current page state to even.target.innerText
-        //Week 21!!
-    };
+    // };
+    // function renderTemplates(event) {
+    //     event.preventDefault()
+    //     //change the state to whichever selection is made in the dropdown menu
+    //     console.log(event.target.innerText);
+    //     setCurrentPage(event.target.innerText);
+    //     //create an empty template for the default and get rid of the state defaulting to the cover letter
+    //     //update the current page state to even.target.innerText
+    //     //Week 21!!
+    // };
 
 
     return(
@@ -108,11 +104,11 @@ const HeroNAV = () => {
           <nav className="tabs">
             <div className="container">
               <ul className="magic">
-                <li className="is-active"><a  onClick = {renderTemplates}>Overview</a></li>
+                <li className="is-active"><a  href="/">Overview</a></li>
                 {/* <!-- <li><a href="#Experience">Experience</a></li> --> */}
-                <li><a onClick = {renderTemplates}>Skills</a></li>
-                <li><a onClick = {renderTemplates}>Projects</a></li>
-                <li><a  onClick = {renderTemplates}>About</a></li>
+                <li><a href="/Skills">Skills</a></li>
+                <li><a href="/Projects">Projects</a></li>
+                <li><a  href="./About">About</a></li>
               </ul>
             </div>
           </nav>
