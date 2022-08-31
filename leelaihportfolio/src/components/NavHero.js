@@ -42,7 +42,7 @@ const HeroNAV = () => {
         //create an empty template for the default and get rid of the state defaulting to the cover letter
         //update the current page state to even.target.innerText
         //Week 21!!
-      }
+    };
 
 
     return(
@@ -97,7 +97,7 @@ const HeroNAV = () => {
             </p>
     
             <p className="subtitle">
-            <h2></h2>
+            {/* <h2></h2> */}
             <span id="typed"></span>
             </p>
           </div>
