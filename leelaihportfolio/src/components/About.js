@@ -3,6 +3,7 @@ import "../index.css"
 import professionalImg from ".././assets/images/professionalPicture.jpg"
 const About = () =>{
 
+  return(
     <section className="section is-large" id="About">
     <div className="columns is-8 is-vcentered" id="aboutContainer" >
       <div className="colum is-8 notification " id="aboutCard">
@@ -23,7 +24,7 @@ const About = () =>{
       </div>
     </div>
   </section>
-
+  )
 }
 
 export default About;
