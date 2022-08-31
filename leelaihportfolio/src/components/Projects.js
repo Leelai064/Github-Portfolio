@@ -37,6 +37,7 @@ const Projects = () => {
             </div>
 
             <div id="webDev" className="show columns">
+            <div class='rows'>
                 <div className="section-dark my-work" id="myWork">
                     <div className="uPennContainer">
                         <div className="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
@@ -44,7 +45,7 @@ const Projects = () => {
                                 <h1 className="title">Completed Projects</h1>
                             </div>
 
-                            <section id="portfolio" />
+                            <section/>
                             <div className="project column">
                                 <img className="project__image" id="firstImage" src={readmeGenerator}></img>
                                 <p>README Generator</p>
@@ -76,7 +77,7 @@ const Projects = () => {
 
 
 
-                            <div className="project column">
+                            <div className="project ">
                                 <img className="project__image" id="otherImage" src={PersonalScheduler}></img>
                                 <p>Personal Scheduler</p>
                                 <h3 className="grid__title"> full-stack</h3>
@@ -89,8 +90,9 @@ const Projects = () => {
                                     </form>
                                 </div>
                             </div>
-                            <div className="project column">
-                                <img width="1500 vh" height="2500 vh" id="otherImage" className="project__image"
+                            
+                            <div className="project ">
+                                <img width="1200 vh" height="2500 vh" id="otherImage" className="project__image"
                                     src={ EntertainmentHub} ></img>
                                 <p>Entertainment Hub</p>
                                 <h3 className="grid__title"> API Intergration</h3>
@@ -120,7 +122,7 @@ const Projects = () => {
                                     </form>
                                 </div>
                             </div>
-                            <div className="project column">
+                            <div className="project">
                                 <img className="project__image" id="otherImage" src={Quiz} ></img>
                                 <p>Timed Quiz!</p>
                                 <h3 className="grid__title"> Full Stack React App</h3>
@@ -137,6 +139,8 @@ const Projects = () => {
                                     </form>
                                 </div>
                             </div>
+                            </div>
+                            
                             <div className="overlay">
                                 <div className="overlay__inner">
                                     <button className="close">close X</button>

@@ -83,6 +83,11 @@ body {
 .githubRepo {
   cursor: pointer;
 }
+.rows{
+  display:flex;
+  flex-direction: column;
+  position:inline;
+}
 
 #portfolio {
   width: 100%;
@@ -100,6 +105,8 @@ body {
   background: #FFB7C5;
   overflow: hidden;
   height: 200px;
+  width: 300px;
+
 }
 .project img {
   position: absolute;
@@ -207,9 +214,6 @@ img,
   border: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-.close:hover {
-  color: #d1a39e;
 }
 
 /* About Section Begins */
