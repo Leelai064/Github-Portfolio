@@ -1,6 +1,7 @@
 import React from 'react'
 import "../index.css"
-function Skills(){
+
+const Skills = () => {
 return(
     <section className="section is-large hide" id="Skills">
     <div id="skillsContainer">

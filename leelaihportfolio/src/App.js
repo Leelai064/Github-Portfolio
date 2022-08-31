@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavHero from "./components/NavHero";
 import Footer from "./components/Footer";
@@ -11,16 +11,17 @@ import 'bulma/css/bulma.min.css';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
     <NavHero/>
     <Routes>
     <Route path= "/" element = {<Overview/>}/>
-    <Route path= "/" element = {<Skills/>}/>
-    <Route path= "/" element = {<Projects/>}/>
-    <Route path= "/" element = {<About/>}/>
+    <Route path= "/Skills" element = {<Skills/>}/>
+    <Route path= "/Projects" element = {<Projects/>}/>
+    <Route path= "/About" element = {<About/>}/>
     </Routes>
     <Footer/>
-    </BrowserRouter>
+    </Router>
+   
   );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react'
+import "../index.css"
 
-function About(){
+const About = () =>{
 
     <section className="section is-large hide" id="About">
     <div className="columns is-8 is-vcentered" id="aboutContainer" >

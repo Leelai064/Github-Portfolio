@@ -1,6 +1,9 @@
 import React from 'react'
 import "../index.css"
-function Overview() {
+
+
+const Overview = () => {
+
     return (
         <section className="section is-large show " id="Overview">
             <div id="overviewContainer">
